@@ -315,7 +315,32 @@ h1 .accent { color: var(--purple); font-style: italic; }
 }
 @media(max-width: 580px){ .cards-3 { grid-template-columns: 1fr; } }
 
-/* ─── NOTE ─── */
+.card-address {
+  font-size: 11px;
+  color: var(--muted2);
+  line-height: 1.6;
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border2);
+}
+.card-address::before { content: '📍 '; }
+
+.price-box {
+  background: rgba(138,78,199,0.05);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--ink2);
+}
+.price-box .price-row { display:flex; justify-content:space-between; align-items:baseline; }
+.price-box .price-label { color: var(--muted); font-size:11px; }
+.price-box .price-val { font-weight:700; color: var(--purple); font-size:15px; }
+.price-box .price-includes { font-size:11px; color:var(--muted); margin-top:3px; line-height:1.7; padding-bottom:10px; border-bottom:1px solid var(--border2); margin-bottom:10px; }
+.price-box .price-includes:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
+
 .note {
   margin-top: 12px;
   padding: 12px 16px;
@@ -459,6 +484,55 @@ footer {
 
 .footer-line { font-size:12px; color:var(--muted); letter-spacing:2px; }
 
+/* LOGO */
+.mh-logo {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+  margin-bottom: 18px;
+  opacity: 0.92;
+  filter: drop-shadow(0 2px 8px rgba(138,78,199,0.15));
+}
+
+/* COPYRIGHT BOX */
+.copyright-box {
+  margin-top: 32px;
+  padding: 20px 24px;
+  background: rgba(42,31,74,0.06);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cr-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink2);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.cr-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.cr-link {
+  font-size: 12px;
+  color: var(--purple);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  letter-spacing: 1px;
+}
+.cr-link:hover { opacity: 0.7; }
+.cr-text {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
 @media(max-width: 580px){
   .cards { grid-template-columns: 1fr; }
   .ceremony { padding: 24px 18px; }
@@ -477,13 +551,16 @@ footer {
     <div class="fdot fdot-purple"></div>
     <div class="fdot fdot-pink"></div>
   </div>
-  <div class="header-eyebrow">✦ Magnified Healing® · Official Taiwan ✦</div>
+  
+  <img src="data:image/jpeg;base64,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" alt="Magnified Healing® Logo" class="mh-logo" />
   <h1>瓦遇 <span class="accent">Wagi</span><br>2026 全年開課行程</h1>
   <p class="header-sub">
     擴大療癒法® · 全台巡迴 × 線上 × 年度慶典<br>
     每一個時間點，都是祢靈魂準備好的此刻
   </p>
-  <div class="line-pill">🟣 官方 LINE @209grmlx</div>
+  <a href="https://lin.ee/4ErTXt9" target="_blank" style="text-decoration:none;">
+    <div class="line-pill">🟣 官方 LINE @209grmlx　點此加入 →</div>
+  </a>
 </header>
 
 <div class="wrapper">
@@ -529,12 +606,13 @@ footer {
       <div class="card-region"><span class="rdot"></span>台中</div>
       <div class="card-date">4月 29–30日</div>
       <div class="card-weekday">三、四</div>
-      <div class="card-time">09:00–17:00（第一天至 21:00）<br>2人→霧峰 ／ 3人以上→西區</div>
+      <div class="card-time">09:00–17:00（第一天至 21:00）</div>
       <div class="card-footer">
         <div class="card-quota">滿 <strong>2人</strong>成班</div>
         <span class="badge badge-open">招生中</span>
       </div>
       <div class="card-deadline">⏰ 報名截止：4月 20日</div>
+      <div class="card-address">霧峰區樹仁路61號5樓（2人）<br>西區忠明南路333號3樓（3人以上）</div>
       <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-blue">立即報名 →</a>
     </div>
 
@@ -542,12 +620,13 @@ footer {
       <div class="card-region"><span class="rdot"></span>台中</div>
       <div class="card-date">5月 4–5日</div>
       <div class="card-weekday">一、二</div>
-      <div class="card-time">09:00–17:00（第一天至 21:00）<br>2人→霧峰 ／ 3人以上→西區</div>
+      <div class="card-time">09:00–17:00（第一天至 21:00）</div>
       <div class="card-footer">
         <div class="card-quota">滿 <strong>2人</strong>成班</div>
         <span class="badge badge-open">招生中</span>
       </div>
       <div class="card-deadline">⏰ 報名截止：4月 25日</div>
+      <div class="card-address">霧峰區樹仁路61號5樓（2人）<br>西區忠明南路333號3樓（3人以上）</div>
       <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-blue">立即報名 →</a>
     </div>
 
@@ -561,6 +640,7 @@ footer {
         <span class="badge badge-open">招生中</span>
       </div>
       <div class="card-deadline">⏰ 報名截止：5月 30日</div>
+      <div class="card-address">平鎮區民族路三段 281 號 2 樓</div>
       <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-purple">立即報名 →</a>
     </div>
 
@@ -574,6 +654,7 @@ footer {
         <span class="badge badge-open">招生中</span>
       </div>
       <div class="card-deadline">⏰ 報名截止：5月 20日</div>
+      <div class="card-address">左營區明華一路 221 號 2 樓</div>
       <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-pink">立即報名 →</a>
     </div>
 
@@ -638,8 +719,15 @@ footer {
     <div class="section-tag">
       <span class="tag-code purple">MH3</span>
       <span class="tag-name">三階「光能療癒」習修者工作坊</span>
-      <span class="tag-price">三日 · 需 MH1 ＋ MH1.5 · 洽詢費用</span>
+      <span class="tag-price">新生 $21,600 ／ 複訓 $10,800 · 需 MH1＋MH1.5</span>
     </div>
+  </div>
+
+  <div class="price-box">
+    <div class="price-row"><span class="price-label">① 新生報名</span><span class="price-val">NT$ 21,600</span></div>
+    <div class="price-includes">含：官方三階課本、深度學習講義、官方正式三階證書（紙本）、官方三階電子證書（含證書費 NT$1,800）</div>
+    <div class="price-row"><span class="price-label">② 複訓學員</span><span class="price-val">NT$ 10,800</span></div>
+    <div class="price-includes">含：深度學習講義、官方複訓參與證書（紙本）、官方三階電子證書（含證書費 NT$880）<br>複訓需另購最新教材者，教材費另計 NT$750</div>
   </div>
 
   <div class="cards">
@@ -653,6 +741,7 @@ footer {
         <div class="card-quota">已確認開班</div>
         <span class="badge badge-confirmed">✦ 確認</span>
       </div>
+      <div class="card-address">霧峰區樹仁路61號5樓（2人班）<br>西區忠明南路333號3樓（3人以上）</div>
       <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-blue">立即報名 →</a>
     </div>
 
@@ -660,12 +749,13 @@ footer {
       <div class="card-region"><span class="rdot"></span>花蓮主場</div>
       <div class="card-date">6月 26–28日</div>
       <div class="card-weekday">五、六、日</div>
-      <div class="card-time">09:00–12:00 ／ 13:00–19:00<br>花蓮市中央路三段 661 號</div>
+      <div class="card-time">09:00–12:00 ／ 13:00–19:00</div>
       <div class="card-footer">
         <div class="card-quota"><strong>1人</strong>即確認開班</div>
         <span class="badge badge-hot">隨報隨開</span>
       </div>
       <div class="card-deadline">⏰ 報名截止：6月 15日</div>
+      <div class="card-address">花蓮市中央路三段 661 號</div>
       <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-gold">立即報名 →</a>
     </div>
 
@@ -679,6 +769,7 @@ footer {
         <span class="badge badge-open">招生中</span>
       </div>
       <div class="card-deadline">⏰ 報名截止：7月 20日</div>
+      <div class="card-address">台北火車站附近（確認成班後公告）</div>
       <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-purple">立即報名 →</a>
     </div>
 
@@ -692,6 +783,7 @@ footer {
         <span class="badge badge-open">招生中</span>
       </div>
       <div class="card-deadline">⏰ 報名截止：9月 15日</div>
+      <div class="card-address">左營區明華一路 221 號 2 樓</div>
       <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-pink">立即報名 →</a>
     </div>
 
@@ -705,6 +797,7 @@ footer {
         <span class="badge badge-open">招生中</span>
       </div>
       <div class="card-deadline">⏰ 報名截止：10月 25日</div>
+      <div class="card-address">平鎮區民族路三段 281 號 2 樓</div>
       <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-purple">立即報名 →</a>
     </div>
 
@@ -793,7 +886,24 @@ footer {
     <a href="https://forms.gle/wBrtRkgGYxuGRHqz9"      target="_blank" class="chip cr">MH2 <span>秋分慶典</span></a>
     <a href="https://forms.gle/SFV7LnssZwhma6Qt9"       target="_blank" class="chip cp">MH3 <span>三階光能</span></a>
   </div>
-  <div class="footer-line">官方 LINE @209grmlx ｜ linktr.ee/AscendAWANA369</div>
+  <div class="footer-line">
+    <a href="https://lin.ee/4ErTXt9" target="_blank" style="color:var(--purple);text-decoration:none;">官方 LINE @209grmlx 點此加入</a>
+    ｜ linktr.ee/AscendAWANA369
+  </div>
+
+  <div class="copyright-box">
+    <div class="cr-title">🌐 官方網站</div>
+    <div class="cr-links">
+      <a href="https://www.magnifiedhealing.com.tw" target="_blank" class="cr-link">擴大療癒法® 中文官網</a>
+      <a href="https://www.magnifiedhealing.com" target="_blank" class="cr-link">擴大療癒法® 英文官網</a>
+    </div>
+    <p class="cr-text">
+      擴大療癒法®的名稱、標誌，以及所有教材與內容均受到國際法規與世界智慧財產組織（WIPO）的保護，版權歸屬於擴大療癒法®公司所有。
+    </p>
+    <p class="cr-text" style="margin-top:8px;">
+      擴大療癒法®共同原創者：凱瑟琳·安德森 (Kathryn Anderson) · 吉賽兒·金 (Gisèle King)
+    </p>
+  </div>
 </footer>
 
 </body>
