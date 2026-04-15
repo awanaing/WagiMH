@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>瓦遇 Wagi 2026 開課行程</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+:root {
+  --bg:             #EEE9F7;
+  --bg2:            #E6DFF2;
+  --surface:        rgba(255,255,255,0.80);
+  --surface2:       rgba(255,255,255,0.55);
+  --border:         rgba(150,120,200,0.18);
+  --border2:        rgba(150,120,200,0.10);
+
+  --gold:           #C9963A;
+  --gold-light:     #EDD080;
+  --gold-pale:      rgba(201,150,58,0.13);
+
+  --blue:           #4A7EC7;
+  --blue-light:     #A8C4F0;
+  --blue-pale:      rgba(74,126,199,0.12);
+
+  --pink:           #C75A6A;
+  --pink-light:     #F0A8B4;
+  --pink-pale:      rgba(199,90,106,0.11);
+
+  --purple:         #8A4EC7;
+  --purple-light:   #C8A0F0;
+  --purple-pale:    rgba(138,78,199,0.11);
+
+  --teal:           #4AABB0;
+  --teal-pale:      rgba(74,171,176,0.12);
+
+  --ink:            #2A1F4A;
+  --ink2:           #4A3A6A;
+  --muted:          rgba(42,31,74,0.52);
+  --muted2:         rgba(42,31,74,0.35);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Noto Serif TC', serif;
+  min-height: 100vh;
+}
+
+/* 靜態背景光暈 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 40% at 15% 0%, rgba(201,150,58,0.09) 0%, transparent 55%),
+    radial-gradient(ellipse 55% 35% at 85% 15%, rgba(74,126,199,0.09) 0%, transparent 50%),
+    radial-gradient(ellipse 45% 30% at 50% 100%, rgba(138,78,199,0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ─── HEADER ─── */
+header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 56px 24px 48px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255,255,255,0.45) 0%, transparent 100%);
+}
+
+.flame-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.fdot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.fdot-gold   { background: var(--gold); }
+.fdot-blue   { background: var(--blue); }
+.fdot-purple { background: var(--purple); width:14px; height:14px; }
+.fdot-pink   { background: var(--pink); }
+
+.header-eyebrow {
+  font-size: 10px;
+  letter-spacing: 6px;
+  color: var(--purple);
+  margin-bottom: 16px;
+  opacity: 0.75;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 5.5vw, 48px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+h1 .accent { color: var(--purple); font-style: italic; }
+
+.header-sub {
+  font-size: clamp(12px, 2vw, 14px);
+  color: var(--muted);
+  letter-spacing: 2px;
+  line-height: 2.1;
+  margin-bottom: 26px;
+}
+
+.line-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(138,78,199,0.09);
+  border: 1px solid rgba(138,78,199,0.25);
+  padding: 9px 22px;
+  border-radius: 100px;
+  font-size: 12px;
+  color: var(--purple);
+  letter-spacing: 2px;
+}
+
+/* ─── WRAPPER ─── */
+.wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
+}
+
+/* ─── SECTION LABEL ─── */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 52px 0 18px;
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 8px 16px;
+  border-radius: 10px;
+  white-space: nowrap;
+  box-shadow: 0 2px 12px rgba(138,78,199,0.06);
+}
+.tag-code { font-size: 11px; letter-spacing: 3px; font-weight: 700; }
+.tag-code.gold   { color: var(--gold); }
+.tag-code.blue   { color: var(--blue); }
+.tag-code.purple { color: var(--purple); }
+.tag-code.pink   { color: var(--pink); }
+.tag-code.teal   { color: var(--teal); }
+.tag-name  { font-size: 13px; color: var(--ink2); }
+.tag-price { font-size: 11px; color: var(--muted); border-left: 1px solid var(--border); padding-left: 10px; }
+
+/* ─── CARDS ─── */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(138,78,199,0.05), 0 1px 3px rgba(42,31,74,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(138,78,199,0.10), 0 2px 6px rgba(42,31,74,0.07);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 14px 14px 0 0;
+}
+.c-gold::before   { background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
+.c-blue::before   { background: linear-gradient(90deg, var(--blue), var(--blue-light)); }
+.c-pink::before   { background: linear-gradient(90deg, var(--pink), var(--pink-light)); }
+.c-purple::before { background: linear-gradient(90deg, var(--purple), var(--purple-light)); }
+.c-teal::before   { background: linear-gradient(90deg, var(--teal), #90D8DC); }
+
+.card-region {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--muted);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.rdot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
+.c-gold .rdot   { background: var(--gold); }
+.c-blue .rdot   { background: var(--blue); }
+.c-pink .rdot   { background: var(--pink); }
+.c-purple .rdot { background: var(--purple); }
+.c-teal .rdot   { background: var(--teal); }
+
+.card-date {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(17px, 3.5vw, 22px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 3px;
+}
+.card-weekday {
+  font-size: 11px;
+  color: var(--muted2);
+  margin-bottom: 12px;
+}
+.card-time {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border2);
+  line-height: 1.7;
+}
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.card-quota { font-size: 12px; color: var(--ink2); line-height: 1.5; }
+.card-quota strong { color: var(--ink); }
+
+.badge {
+  font-size: 10px;
+  padding: 3px 9px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.badge-open {
+  background: var(--blue-pale);
+  color: var(--blue);
+  border: 1px solid rgba(74,126,199,0.22);
+}
+.badge-hot {
+  background: var(--gold-pale);
+  color: var(--gold);
+  border: 1px solid rgba(201,150,58,0.22);
+}
+.badge-confirmed {
+  background: rgba(70,155,90,0.12);
+  color: #3D8A56;
+  border: 1px solid rgba(70,155,90,0.28);
+}
+
+.card-deadline {
+  font-size: 10px;
+  color: var(--pink);
+  letter-spacing: 1px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border2);
+  opacity: 0.9;
+}
+
+/* ─── CTA BUTTON ─── */
+.card-cta {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-family: 'Noto Serif TC', serif;
+  text-decoration: none;
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+.card-cta:hover { opacity: 0.8; }
+.cta-gold   { background: var(--gold-pale);   color: var(--gold);   border: 1px solid rgba(201,150,58,0.3); }
+.cta-blue   { background: var(--blue-pale);   color: var(--blue);   border: 1px solid rgba(74,126,199,0.3); }
+.cta-purple { background: var(--purple-pale); color: var(--purple); border: 1px solid rgba(138,78,199,0.3); }
+.cta-pink   { background: var(--pink-pale);   color: var(--pink);   border: 1px solid rgba(199,90,106,0.3); }
+.cta-teal   { background: var(--teal-pale);   color: var(--teal);   border: 1px solid rgba(74,171,176,0.3); }
+
+/* ─── ONLINE 3-COL ─── */
+.cards-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+@media(max-width: 580px){ .cards-3 { grid-template-columns: 1fr; } }
+
+/* ─── NOTE ─── */
+.note {
+  margin-top: 12px;
+  padding: 12px 16px;
+  background: rgba(138,78,199,0.05);
+  border-left: 2px solid rgba(138,78,199,0.3);
+  border-radius: 0 8px 8px 0;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.9;
+}
+
+/* ─── CEREMONY ─── */
+.ceremony {
+  background: linear-gradient(135deg, rgba(42,31,74,0.93) 0%, rgba(22,14,44,0.96) 100%);
+  border: 1px solid rgba(138,78,199,0.30);
+  border-radius: 16px;
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(138,78,199,0.13);
+}
+.ceremony::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--blue), var(--pink), var(--purple));
+  border-radius: 16px 16px 0 0;
+}
+
+.cer-eyebrow { font-size: 10px; letter-spacing: 5px; color: var(--purple-light); margin-bottom: 10px; opacity: 0.8; }
+.cer-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: 700;
+  color: #F0EDF8;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+.cer-quote {
+  font-size: 13px;
+  color: rgba(240,237,248,0.50);
+  font-style: italic;
+  margin-bottom: 26px;
+  line-height: 1.8;
+}
+.cer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.meta-item .label { font-size: 10px; letter-spacing: 2px; color: rgba(240,237,248,0.38); margin-bottom: 4px; }
+.meta-item .value { font-size: 15px; color: var(--gold-light); font-weight: 600; }
+
+.cer-types { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+.ctype {
+  flex: 1;
+  min-width: 160px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+.ctype-icon { font-size: 18px; margin-bottom: 6px; display: block; }
+.ctype-name { font-size: 13px; font-weight: 700; color: #F0EDF8; margin-bottom: 4px; }
+.ctype-desc { font-size: 11px; color: rgba(240,237,248,0.48); line-height: 1.6; }
+
+.cer-cta {
+  display: inline-block;
+  background: rgba(201,150,58,0.18);
+  border: 1px solid rgba(201,150,58,0.4);
+  color: var(--gold-light);
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+.cer-cta:hover { opacity: 0.8; }
+
+/* ─── LEGEND ─── */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  padding: 18px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  margin-top: 48px;
+}
+.legend-title { width:100%; font-size:10px; letter-spacing:3px; color:var(--muted2); }
+.li { display:flex; align-items:center; gap:7px; font-size:12px; color:var(--muted); }
+.li-dot { width:8px; height:8px; border-radius:50%; }
+
+/* ─── FOOTER ─── */
+footer {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
+  border-top: 1px solid var(--border);
+  padding: 52px 24px 60px;
+  text-align: center;
+}
+.footer-dots { display:flex; justify-content:center; gap:6px; margin-bottom:20px; }
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 4vw, 28px);
+  color: var(--ink);
+  margin-bottom: 6px;
+  font-style: italic;
+}
+.footer-logo span { color: var(--purple); }
+.footer-sub { font-size: 12px; color: var(--muted); letter-spacing: 2px; line-height: 2; margin-bottom: 28px; }
+
+.codes { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:24px; }
+.chip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-family: 'Noto Serif TC', serif;
+  transition: opacity 0.2s;
+  display: inline-block;
+}
+.chip:hover { opacity: 0.75; }
+.chip span { font-size:10px; font-weight:400; color:var(--muted); margin-left:5px; letter-spacing:1px; }
+.cg { color: var(--gold); }
+.cb { color: var(--blue); }
+.cp { color: var(--purple); }
+.cr { color: var(--pink); }
+
+.footer-line { font-size:12px; color:var(--muted); letter-spacing:2px; }
+
+@media(max-width: 580px){
+  .cards { grid-template-columns: 1fr; }
+  .ceremony { padding: 24px 18px; }
+  .ctype { min-width:100%; }
+  .wrapper { padding: 0 14px 60px; }
+  header { padding: 44px 16px 36px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="flame-dots">
+    <div class="fdot fdot-gold"></div>
+    <div class="fdot fdot-blue"></div>
+    <div class="fdot fdot-purple"></div>
+    <div class="fdot fdot-pink"></div>
+  </div>
+  <div class="header-eyebrow">✦ Magnified Healing® · Official Taiwan ✦</div>
+  <h1>瓦遇 <span class="accent">Wagi</span><br>2026 全年開課行程</h1>
+  <p class="header-sub">
+    擴大療癒法® · 全台巡迴 × 線上 × 年度慶典<br>
+    每一個時間點，都是祢靈魂準備好的此刻
+  </p>
+  <div class="line-pill">🟣 官方 LINE @209grmlx</div>
+</header>
+
+<div class="wrapper">
+
+  <!-- ── MH1 ── -->
+  <div class="section-label">
+    <div class="section-tag">
+      <span class="tag-code gold">MH1</span>
+      <span class="tag-name">擴大療癒法® 一階工作坊</span>
+      <span class="tag-price">新生 $14,400 ／ 複訓 $7,200</span>
+    </div>
+  </div>
+
+  <div class="cards">
+
+    <div class="card c-gold">
+      <div class="card-region"><span class="rdot"></span>花蓮主場</div>
+      <div class="card-date">5月 9–10日</div>
+      <div class="card-weekday">六、日</div>
+      <div class="card-time">09:00–17:00（第一天至 21:00）<br>花蓮市中央路三段 661 號</div>
+      <div class="card-footer">
+        <div class="card-quota"><strong>1人</strong>即確認開班</div>
+        <span class="badge badge-hot">隨報隨開</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：4月 25日</div>
+      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-gold">立即報名 →</a>
+    </div>
+
+    <div class="card c-gold">
+      <div class="card-region"><span class="rdot"></span>花蓮主場</div>
+      <div class="card-date">5月 30–31日</div>
+      <div class="card-weekday">六、日</div>
+      <div class="card-time">09:00–17:00（第一天至 21:00）<br>花蓮市中央路三段 661 號</div>
+      <div class="card-footer">
+        <div class="card-quota"><strong>1人</strong>即確認開班</div>
+        <span class="badge badge-hot">隨報隨開</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：5月 20日</div>
+      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-gold">立即報名 →</a>
+    </div>
+
+    <div class="card c-blue">
+      <div class="card-region"><span class="rdot"></span>台中</div>
+      <div class="card-date">4月 29–30日</div>
+      <div class="card-weekday">三、四</div>
+      <div class="card-time">09:00–17:00（第一天至 21:00）<br>2人→霧峰 ／ 3人以上→西區</div>
+      <div class="card-footer">
+        <div class="card-quota">滿 <strong>2人</strong>成班</div>
+        <span class="badge badge-open">招生中</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：4月 20日</div>
+      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-blue">立即報名 →</a>
+    </div>
+
+    <div class="card c-blue">
+      <div class="card-region"><span class="rdot"></span>台中</div>
+      <div class="card-date">5月 4–5日</div>
+      <div class="card-weekday">一、二</div>
+      <div class="card-time">09:00–17:00（第一天至 21:00）<br>2人→霧峰 ／ 3人以上→西區</div>
+      <div class="card-footer">
+        <div class="card-quota">滿 <strong>2人</strong>成班</div>
+        <span class="badge badge-open">招生中</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：4月 25日</div>
+      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-blue">立即報名 →</a>
+    </div>
+
+    <div class="card c-purple">
+      <div class="card-region"><span class="rdot"></span>桃園 平鎮區</div>
+      <div class="card-date">6月 6–7日</div>
+      <div class="card-weekday">六、日</div>
+      <div class="card-time">09:00–17:00（第一天至 21:00）</div>
+      <div class="card-footer">
+        <div class="card-quota">滿 <strong>3人</strong>成班</div>
+        <span class="badge badge-open">招生中</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：5月 30日</div>
+      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-purple">立即報名 →</a>
+    </div>
+
+    <div class="card c-pink">
+      <div class="card-region"><span class="rdot"></span>高雄</div>
+      <div class="card-date">5月 26–27日</div>
+      <div class="card-weekday">二、三</div>
+      <div class="card-time">09:00–17:00（第一天至 21:00）</div>
+      <div class="card-footer">
+        <div class="card-quota">滿 <strong>4人</strong>成班</div>
+        <span class="badge badge-open">招生中</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：5月 20日</div>
+      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-pink">立即報名 →</a>
+    </div>
+
+    <div class="card c-purple">
+      <div class="card-region"><span class="rdot"></span>台北</div>
+      <div class="card-date">6月 13–14日</div>
+      <div class="card-weekday">二、三</div>
+      <div class="card-time">09:00–17:00（第一天至 21:00）</div>
+      <div class="card-footer">
+        <div class="card-quota">滿 <strong>4人</strong>成班</div>
+        <span class="badge badge-open">招生中</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：6月 5日</div>
+      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-purple">立即報名 →</a>
+    </div>
+
+  </div>
+  <div class="note">💡 花蓮教室可提供學員打地舖留宿，報名時告知即可｜全台滿4人、海外滿8人皆可申請專屬邀課</div>
+
+  <!-- ── MH1.5 ── -->
+  <div class="section-label">
+    <div class="section-tag">
+      <span class="tag-code teal">MH1.5</span>
+      <span class="tag-name">一階復習與高深研究課程</span>
+      <span class="tag-price">新生 $7,300 ／ 複訓 $3,600 · 全線上</span>
+    </div>
+  </div>
+
+  <div class="cards-3">
+    <div class="card c-teal">
+      <div class="card-region"><span class="rdot"></span>Discord 全線上</div>
+      <div class="card-date">4月 20日</div>
+      <div class="card-weekday">一</div>
+      <div class="card-time">09:00–22:00<br>全台 / 海外皆可參加</div>
+      <div class="card-footer"><span class="badge badge-open">開放報名</span></div>
+      <div class="card-deadline">⏰ 報名截止：4月 15日</div>
+      <a href="https://forms.gle/HetxhSfmhJRFCEKm7" target="_blank" class="card-cta cta-teal">立即報名 →</a>
+    </div>
+    <div class="card c-teal">
+      <div class="card-region"><span class="rdot"></span>Discord 全線上</div>
+      <div class="card-date">5月 20日</div>
+      <div class="card-weekday">三</div>
+      <div class="card-time">09:00–22:00<br>全台 / 海外皆可參加</div>
+      <div class="card-footer"><span class="badge badge-open">開放報名</span></div>
+      <div class="card-deadline">⏰ 報名截止：5月 15日</div>
+      <a href="https://forms.gle/HetxhSfmhJRFCEKm7" target="_blank" class="card-cta cta-teal">立即報名 →</a>
+    </div>
+    <div class="card c-teal">
+      <div class="card-region"><span class="rdot"></span>Discord 全線上</div>
+      <div class="card-date">6月 20日</div>
+      <div class="card-weekday">六</div>
+      <div class="card-time">09:00–22:00<br>全台 / 海外皆可參加</div>
+      <div class="card-footer"><span class="badge badge-open">開放報名</span></div>
+      <div class="card-deadline">⏰ 報名截止：6月 15日</div>
+      <a href="https://forms.gle/HetxhSfmhJRFCEKm7" target="_blank" class="card-cta cta-teal">立即報名 →</a>
+    </div>
+  </div>
+  <div class="note">💡 每月 20 日固定一場 · 1–2人即可啟動專屬邀課 · 需上傳一階證書資格審核 · 進修三階前必修</div>
+
+  <!-- ── MH3 ── -->
+  <div class="section-label">
+    <div class="section-tag">
+      <span class="tag-code purple">MH3</span>
+      <span class="tag-name">三階「光能療癒」習修者工作坊</span>
+      <span class="tag-price">三日 · 需 MH1 ＋ MH1.5 · 洽詢費用</span>
+    </div>
+  </div>
+
+  <div class="cards">
+
+    <div class="card c-blue">
+      <div class="card-region"><span class="rdot"></span>台中</div>
+      <div class="card-date">5月 1–3日</div>
+      <div class="card-weekday">五、六、日</div>
+      <div class="card-time">09:00–12:00 ／ 13:00–19:00</div>
+      <div class="card-footer">
+        <div class="card-quota">已確認開班</div>
+        <span class="badge badge-confirmed">✦ 確認</span>
+      </div>
+      <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-blue">立即報名 →</a>
+    </div>
+
+    <div class="card c-gold">
+      <div class="card-region"><span class="rdot"></span>花蓮主場</div>
+      <div class="card-date">6月 26–28日</div>
+      <div class="card-weekday">五、六、日</div>
+      <div class="card-time">09:00–12:00 ／ 13:00–19:00<br>花蓮市中央路三段 661 號</div>
+      <div class="card-footer">
+        <div class="card-quota"><strong>1人</strong>即確認開班</div>
+        <span class="badge badge-hot">隨報隨開</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：6月 15日</div>
+      <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-gold">立即報名 →</a>
+    </div>
+
+    <div class="card c-purple">
+      <div class="card-region"><span class="rdot"></span>台北</div>
+      <div class="card-date">7月 31–8月 2日</div>
+      <div class="card-weekday">五、六、日</div>
+      <div class="card-time">09:00–12:00 ／ 13:00–19:00</div>
+      <div class="card-footer">
+        <div class="card-quota">滿 <strong>4人</strong>成班</div>
+        <span class="badge badge-open">招生中</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：7月 20日</div>
+      <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-purple">立即報名 →</a>
+    </div>
+
+    <div class="card c-pink">
+      <div class="card-region"><span class="rdot"></span>高雄</div>
+      <div class="card-date">9月 25–27日</div>
+      <div class="card-weekday">五、六、日</div>
+      <div class="card-time">09:00–12:00 ／ 13:00–19:00</div>
+      <div class="card-footer">
+        <div class="card-quota">滿 <strong>4人</strong>成班</div>
+        <span class="badge badge-open">招生中</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：9月 15日</div>
+      <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-pink">立即報名 →</a>
+    </div>
+
+    <div class="card c-purple">
+      <div class="card-region"><span class="rdot"></span>桃園 平鎮區</div>
+      <div class="card-date">11月 6–8日</div>
+      <div class="card-weekday">五、六、日</div>
+      <div class="card-time">09:00–12:00 ／ 13:00–19:00</div>
+      <div class="card-footer">
+        <div class="card-quota">滿 <strong>3人</strong>成班</div>
+        <span class="badge badge-open">招生中</span>
+      </div>
+      <div class="card-deadline">⏰ 報名截止：10月 25日</div>
+      <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-purple">立即報名 →</a>
+    </div>
+
+  </div>
+  <div class="note">💡 全台縣市滿4人、海外滿8人可申請專屬邀課 · 完成三階可使用光能療癒技術，但不具教師資格</div>
+
+  <!-- ── MH2 ── -->
+  <div class="section-label">
+    <div class="section-tag">
+      <span class="tag-code pink">MH2</span>
+      <span class="tag-name">二階慶典工作坊・秋分朝聖大典</span>
+      <span class="tag-price">新訓 $8,300 ／ 複訓 $4,150</span>
+    </div>
+  </div>
+
+  <div class="ceremony">
+    <div class="cer-eyebrow">✦ ANNUAL CEREMONY · 2026 AUTUMN EQUINOX · 9/19</div>
+    <div class="cer-title">瓦遇 Wagi<br>2026 秋分朝聖慶典</div>
+    <div class="cer-quote">「不只是我在發光，<br>而是我們一起，照亮世界。」</div>
+    <div class="cer-meta">
+      <div class="meta-item">
+        <div class="label">日期</div>
+        <div class="value">2026年 9月 19日（六）</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">地點</div>
+        <div class="value">花蓮市區（確認人數後公告）</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">學員報到</div>
+        <div class="value">09:00 · 全天至 19:00</div>
+      </div>
+      <div class="meta-item">
+        <div class="label">報名截止</div>
+        <div class="value">9月 10日</div>
+      </div>
+    </div>
+    <div class="cer-types">
+      <div class="ctype">
+        <span class="ctype-icon">👑</span>
+        <div class="ctype-name">慶典學員（新訓 / 複訓）</div>
+        <div class="ctype-desc">完成一階＋11天練習者<br>含官方二階國際教師證書<br>新訓 $8,300 ／ 複訓 $4,150</div>
+      </div>
+      <div class="ctype">
+        <span class="ctype-icon">🕊️</span>
+        <div class="ctype-name">同修輔佐員</div>
+        <div class="ctype-desc">已完成二階授證老學員<br>協助儀式能量場共創<br>免費參與</div>
+      </div>
+      <div class="ctype">
+        <span class="ctype-icon">🌸</span>
+        <div class="ctype-name">嘉賓來賓</div>
+        <div class="ctype-desc">對能量療癒有興趣皆可<br>15:00 入場體驗<br>免費</div>
+      </div>
+    </div>
+    <a href="https://forms.gle/wBrtRkgGYxuGRHqz9" target="_blank" class="cer-cta">慶典學員 / 同修輔佐 報名 →</a>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="legend">
+    <div class="legend-title">三聖火焰色標系統</div>
+    <div class="li"><span class="li-dot" style="background:var(--gold)"></span>金色火焰 · 花蓮主場</div>
+    <div class="li"><span class="li-dot" style="background:var(--blue)"></span>藍色火焰 · 台中</div>
+    <div class="li"><span class="li-dot" style="background:var(--purple)"></span>紫色火焰 · 台北 / 桃園</div>
+    <div class="li"><span class="li-dot" style="background:var(--pink)"></span>玫瑰火焰 · 高雄</div>
+    <div class="li"><span class="li-dot" style="background:var(--teal)"></span>青光 · 線上課程</div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-dots">
+    <div class="fdot fdot-gold"></div>
+    <div class="fdot fdot-blue"></div>
+    <div class="fdot fdot-purple"></div>
+    <div class="fdot fdot-pink"></div>
+  </div>
+  <div class="footer-logo">瓦遇 <span>Wagi</span> · 㛊心 Tosi</div>
+  <p class="footer-sub">
+    擴大療癒法® 官方授證 Master-Teacher<br>
+    泰雅語 · Wagi 意為「太陽」
+  </p>
+  <div class="codes">
+    <a href="https://reurl.cc/dprqXz"                  target="_blank" class="chip cg">MH1 <span>一階工作坊</span></a>
+    <a href="https://forms.gle/HetxhSfmhJRFCEKm7"      target="_blank" class="chip cb">MH1.5 <span>高深研究課</span></a>
+    <a href="https://forms.gle/wBrtRkgGYxuGRHqz9"      target="_blank" class="chip cr">MH2 <span>秋分慶典</span></a>
+    <a href="https://forms.gle/SFV7LnssZwhma6Qt9"       target="_blank" class="chip cp">MH3 <span>三階光能</span></a>
+  </div>
+  <div class="footer-line">官方 LINE @209grmlx ｜ linktr.ee/AscendAWANA369</div>
+</footer>
+
+</body>
+</html>
