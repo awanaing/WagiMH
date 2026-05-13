@@ -1,910 +1,196 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant-TW">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>瓦遇 Wagi 2026 開課行程</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="瓦遇 Wagi 擴大療癒法® 2026 開課行程，包含 MH1 一階、MH1.5 高深資訊研究、MH2 慶典、MH3 光能療癒習修者工作坊。" />
+<title>瓦遇 Wagi｜擴大療癒法® 2026 開課行程</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700;900&family=Noto+Sans+TC:wght@400;500;700;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
 <style>
-* { margin:0; padding:0; box-sizing:border-box; }
+:root{
+  --cream:#fffaf1;--milk:#fffdf8;--lav:#efe7fb;--lav2:#e6d8f5;--purple:#5a198d;--purple2:#8b4fc0;--purple3:#2f114f;--gold:#bb852b;--gold2:#edc767;--rose:#d8798a;--sage:#8ca66b;--teal:#5aa6a8;--ink:#2d2140;--muted:#70627d;--line:rgba(90,25,141,.16);--shadow:0 22px 70px rgba(55,20,86,.14);--soft:0 10px 34px rgba(55,20,86,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth} body{font-family:'Noto Serif TC',serif;background:linear-gradient(180deg,var(--cream),var(--lav) 42%,#fff 100%);color:var(--ink);line-height:1.9;overflow-x:hidden} a{text-decoration:none;color:inherit} img{max-width:100%;display:block} .bg{position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 12% 5%,rgba(237,199,103,.30),transparent 25%),radial-gradient(circle at 90% 10%,rgba(139,79,192,.22),transparent 29%),radial-gradient(circle at 50% 95%,rgba(216,121,138,.16),transparent 32%)}
+.container{width:min(1120px,calc(100% - 36px));margin:auto}.topbar{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:14px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.06em;color:var(--purple3)}.brand img{width:72px;height:auto;border-radius:0;object-fit:contain;background:transparent;border:0}.navlinks{display:flex;gap:18px;align-items:center;font-size:14px;color:var(--muted)}.navlinks a:hover{color:var(--purple)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font-family:'Noto Sans TC',sans-serif;font-weight:900;letter-spacing:.08em;font-size:14px;transition:.2s;border:1px solid transparent;cursor:pointer}.btn-primary{background:linear-gradient(135deg,var(--purple),var(--purple2));color:white;box-shadow:0 12px 34px rgba(90,25,141,.24)}.btn-secondary{background:rgba(255,255,255,.76);color:var(--purple);border-color:rgba(90,25,141,.2)}.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:white}.btn:hover{transform:translateY(-2px);filter:saturate(1.05)}
+.hero{padding:84px 0 58px}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:46px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:rgba(90,25,141,.08);color:var(--purple);border:1px solid rgba(90,25,141,.14);font-size:13px;font-weight:900;letter-spacing:.12em;margin-bottom:18px}.hero h1{font-size:clamp(40px,6vw,76px);line-height:1.12;font-weight:900;letter-spacing:.03em;color:var(--purple3);margin-bottom:18px}.hero h1 em{font-family:'Playfair Display',serif;color:var(--gold);font-style:italic;font-weight:600}.lead{font-size:clamp(17px,2vw,22px);color:#4e3d65;max-width:690px;margin-bottom:18px;font-weight:800}.hero-copy{font-size:16px;color:var(--muted);max-width:620px;margin-bottom:28px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}.quick-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}.trust-card{background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:18px;padding:14px 16px;box-shadow:var(--soft)}.trust-card strong{display:block;color:var(--purple);font-size:18px}.trust-card span{font-size:12px;color:var(--muted)}
+.hero-card{position:relative;border-radius:34px;overflow:hidden;box-shadow:var(--shadow);background:linear-gradient(135deg,#fff,var(--lav));border:1px solid rgba(255,255,255,.65);min-height:540px}.hero-card img.main{width:100%;height:570px;object-fit:cover;object-position:center 25%;filter:saturate(1.03) contrast(1.02)}.hero-card:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(45,19,72,.58));pointer-events:none}.logo-float{position:absolute;right:20px;top:20px;z-index:3;background:rgba(255,255,255,.94);border-radius:20px;width:150px;min-height:116px;padding:10px;display:grid;place-items:center;box-shadow:0 14px 36px rgba(61,23,92,.16);border:1px solid var(--line)}.logo-float img{width:130px;height:auto;object-fit:contain}.hero-badge{position:absolute;left:22px;right:22px;bottom:20px;z-index:2;background:rgba(255,253,248,.9);border:1px solid rgba(255,255,255,.72);backdrop-filter:blur(14px);border-radius:24px;padding:18px;box-shadow:var(--soft)}.hero-badge h3{color:var(--purple3);font-size:20px;margin-bottom:4px}.hero-badge p{color:var(--muted);font-size:14px;line-height:1.75}
+section{padding:66px 0}.section-head{text-align:center;margin:0 auto 34px;max-width:780px}.section-kicker{color:var(--gold);font-weight:900;letter-spacing:.18em;font-size:13px;margin-bottom:8px}.section-head h2{font-size:clamp(28px,4vw,46px);line-height:1.25;color:var(--purple3);margin-bottom:12px}.section-head p{color:var(--muted);font-size:16px}.intro{background:rgba(255,255,255,.52);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--soft)}.panel h3{font-size:24px;color:var(--purple);margin-bottom:12px}.panel p{color:var(--muted)}.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}.check{background:linear-gradient(135deg,rgba(90,25,141,.06),rgba(191,138,46,.08));border:1px solid var(--line);border-radius:16px;padding:12px 14px;color:#4d3b61;font-weight:900;font-size:14px}
+.about-grid{display:grid;grid-template-columns:.86fr 1.14fr;gap:30px;align-items:center}.portrait{border-radius:32px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:white}.portrait img{width:100%;height:620px;object-fit:cover;object-position:center}.about-copy h2{font-size:42px;color:var(--purple3);line-height:1.26;margin-bottom:16px}.about-copy p{color:var(--muted);margin-bottom:14px}.quote-line{font-size:22px;color:var(--gold);font-weight:900;margin:18px 0}.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.tag{background:rgba(90,25,141,.08);border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--purple);font-size:13px;font-weight:900}
 
-:root {
-  --bg:             #EEE9F7;
-  --bg2:            #E6DFF2;
-  --surface:        rgba(255,255,255,0.80);
-  --surface2:       rgba(255,255,255,0.55);
-  --border:         rgba(150,120,200,0.18);
-  --border2:        rgba(150,120,200,0.10);
-
-  --gold:           #C9963A;
-  --gold-light:     #EDD080;
-  --gold-pale:      rgba(201,150,58,0.13);
-
-  --blue:           #4A7EC7;
-  --blue-light:     #A8C4F0;
-  --blue-pale:      rgba(74,126,199,0.12);
-
-  --pink:           #C75A6A;
-  --pink-light:     #F0A8B4;
-  --pink-pale:      rgba(199,90,106,0.11);
-
-  --purple:         #8A4EC7;
-  --purple-light:   #C8A0F0;
-  --purple-pale:    rgba(138,78,199,0.11);
-
-  --teal:           #4AABB0;
-  --teal-pale:      rgba(74,171,176,0.12);
-
-  --ink:            #2A1F4A;
-  --ink2:           #4A3A6A;
-  --muted:          rgba(42,31,74,0.52);
-  --muted2:         rgba(42,31,74,0.35);
-}
-
-body {
-  background: var(--bg);
-  color: var(--ink);
-  font-family: 'Noto Serif TC', serif;
-  min-height: 100vh;
-}
-
-/* 靜態背景光暈 */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 70% 40% at 15% 0%, rgba(201,150,58,0.09) 0%, transparent 55%),
-    radial-gradient(ellipse 55% 35% at 85% 15%, rgba(74,126,199,0.09) 0%, transparent 50%),
-    radial-gradient(ellipse 45% 30% at 50% 100%, rgba(138,78,199,0.08) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* ─── HEADER ─── */
-header {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 56px 24px 48px;
-  border-bottom: 1px solid var(--border);
-  background: linear-gradient(180deg, rgba(255,255,255,0.45) 0%, transparent 100%);
-}
-
-.flame-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 22px;
-}
-
-.fdot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-.fdot-gold   { background: var(--gold); }
-.fdot-blue   { background: var(--blue); }
-.fdot-purple { background: var(--purple); width:14px; height:14px; }
-.fdot-pink   { background: var(--pink); }
-
-.header-eyebrow {
-  font-size: 10px;
-  letter-spacing: 6px;
-  color: var(--purple);
-  margin-bottom: 16px;
-  opacity: 0.75;
-}
-
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(26px, 5.5vw, 48px);
-  font-weight: 700;
-  color: var(--ink);
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
-h1 .accent { color: var(--purple); font-style: italic; }
-
-.header-sub {
-  font-size: clamp(12px, 2vw, 14px);
-  color: var(--muted);
-  letter-spacing: 2px;
-  line-height: 2.1;
-  margin-bottom: 26px;
-}
-
-.line-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(138,78,199,0.09);
-  border: 1px solid rgba(138,78,199,0.25);
-  padding: 9px 22px;
-  border-radius: 100px;
-  font-size: 12px;
-  color: var(--purple);
-  letter-spacing: 2px;
-}
-
-/* ─── WRAPPER ─── */
-.wrapper {
-  position: relative;
-  z-index: 1;
-  max-width: 880px;
-  margin: 0 auto;
-  padding: 0 20px 80px;
-}
-
-/* ─── SECTION LABEL ─── */
-.section-label {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin: 52px 0 18px;
-}
-.section-label::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--border);
-}
-
-.section-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 8px 16px;
-  border-radius: 10px;
-  white-space: nowrap;
-  box-shadow: 0 2px 12px rgba(138,78,199,0.06);
-}
-.tag-code { font-size: 11px; letter-spacing: 3px; font-weight: 700; }
-.tag-code.gold   { color: var(--gold); }
-.tag-code.blue   { color: var(--blue); }
-.tag-code.purple { color: var(--purple); }
-.tag-code.pink   { color: var(--pink); }
-.tag-code.teal   { color: var(--teal); }
-.tag-name  { font-size: 13px; color: var(--ink2); }
-.tag-price { font-size: 11px; color: var(--muted); border-left: 1px solid var(--border); padding-left: 10px; }
-
-/* ─── CARDS ─── */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 12px;
-}
-
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(138,78,199,0.05), 0 1px 3px rgba(42,31,74,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(138,78,199,0.10), 0 2px 6px rgba(42,31,74,0.07);
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  border-radius: 14px 14px 0 0;
-}
-.c-gold::before   { background: linear-gradient(90deg, var(--gold), var(--gold-light)); }
-.c-blue::before   { background: linear-gradient(90deg, var(--blue), var(--blue-light)); }
-.c-pink::before   { background: linear-gradient(90deg, var(--pink), var(--pink-light)); }
-.c-purple::before { background: linear-gradient(90deg, var(--purple), var(--purple-light)); }
-.c-teal::before   { background: linear-gradient(90deg, var(--teal), #90D8DC); }
-
-.card-region {
-  font-size: 10px;
-  letter-spacing: 3px;
-  color: var(--muted);
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.rdot { width:6px; height:6px; border-radius:50%; flex-shrink:0; }
-.c-gold .rdot   { background: var(--gold); }
-.c-blue .rdot   { background: var(--blue); }
-.c-pink .rdot   { background: var(--pink); }
-.c-purple .rdot { background: var(--purple); }
-.c-teal .rdot   { background: var(--teal); }
-
-.card-date {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(17px, 3.5vw, 22px);
-  font-weight: 700;
-  color: var(--ink);
-  line-height: 1.2;
-  margin-bottom: 3px;
-}
-.card-weekday {
-  font-size: 11px;
-  color: var(--muted2);
-  margin-bottom: 12px;
-}
-.card-time {
-  font-size: 12px;
-  color: var(--muted);
-  margin-bottom: 14px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid var(--border2);
-  line-height: 1.7;
-}
-.card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px;
-}
-.card-quota { font-size: 12px; color: var(--ink2); line-height: 1.5; }
-.card-quota strong { color: var(--ink); }
-
-.badge {
-  font-size: 10px;
-  padding: 3px 9px;
-  border-radius: 20px;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.badge-open {
-  background: var(--blue-pale);
-  color: var(--blue);
-  border: 1px solid rgba(74,126,199,0.22);
-}
-.badge-hot {
-  background: var(--gold-pale);
-  color: var(--gold);
-  border: 1px solid rgba(201,150,58,0.22);
-}
-.badge-confirmed {
-  background: rgba(70,155,90,0.12);
-  color: #3D8A56;
-  border: 1px solid rgba(70,155,90,0.28);
-}
-
-.card-deadline {
-  font-size: 10px;
-  color: var(--pink);
-  letter-spacing: 1px;
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid var(--border2);
-  opacity: 0.9;
-}
-
-/* ─── CTA BUTTON ─── */
-.card-cta {
-  display: block;
-  text-align: center;
-  margin-top: 12px;
-  padding: 8px 0;
-  border-radius: 8px;
-  font-size: 11px;
-  letter-spacing: 2px;
-  font-family: 'Noto Serif TC', serif;
-  text-decoration: none;
-  font-weight: 700;
-  transition: opacity 0.2s;
-}
-.card-cta:hover { opacity: 0.8; }
-.cta-gold   { background: var(--gold-pale);   color: var(--gold);   border: 1px solid rgba(201,150,58,0.3); }
-.cta-blue   { background: var(--blue-pale);   color: var(--blue);   border: 1px solid rgba(74,126,199,0.3); }
-.cta-purple { background: var(--purple-pale); color: var(--purple); border: 1px solid rgba(138,78,199,0.3); }
-.cta-pink   { background: var(--pink-pale);   color: var(--pink);   border: 1px solid rgba(199,90,106,0.3); }
-.cta-teal   { background: var(--teal-pale);   color: var(--teal);   border: 1px solid rgba(74,171,176,0.3); }
-
-/* ─── ONLINE 3-COL ─── */
-.cards-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
-@media(max-width: 580px){ .cards-3 { grid-template-columns: 1fr; } }
-
-.card-address {
-  font-size: 11px;
-  color: var(--muted2);
-  line-height: 1.6;
-  margin-top: 6px;
-  padding-top: 8px;
-  border-top: 1px solid var(--border2);
-}
-.card-address::before { content: '📍 '; }
-
-.price-box {
-  background: rgba(138,78,199,0.05);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 14px 16px;
-  margin-bottom: 16px;
-  font-size: 12px;
-  line-height: 1.9;
-  color: var(--ink2);
-}
-.price-box .price-row { display:flex; justify-content:space-between; align-items:baseline; }
-.price-box .price-label { color: var(--muted); font-size:11px; }
-.price-box .price-val { font-weight:700; color: var(--purple); font-size:15px; }
-.price-box .price-includes { font-size:11px; color:var(--muted); margin-top:3px; line-height:1.7; padding-bottom:10px; border-bottom:1px solid var(--border2); margin-bottom:10px; }
-.price-box .price-includes:last-child { border-bottom:none; margin-bottom:0; padding-bottom:0; }
-
-.note {
-  margin-top: 12px;
-  padding: 12px 16px;
-  background: rgba(138,78,199,0.05);
-  border-left: 2px solid rgba(138,78,199,0.3);
-  border-radius: 0 8px 8px 0;
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.9;
-}
-
-/* ─── CEREMONY ─── */
-.ceremony {
-  background: linear-gradient(135deg, rgba(42,31,74,0.93) 0%, rgba(22,14,44,0.96) 100%);
-  border: 1px solid rgba(138,78,199,0.30);
-  border-radius: 16px;
-  padding: 36px;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 8px 40px rgba(138,78,199,0.13);
-}
-.ceremony::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--gold), var(--blue), var(--pink), var(--purple));
-  border-radius: 16px 16px 0 0;
-}
-
-.cer-eyebrow { font-size: 10px; letter-spacing: 5px; color: var(--purple-light); margin-bottom: 10px; opacity: 0.8; }
-.cer-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(20px, 4vw, 30px);
-  font-weight: 700;
-  color: #F0EDF8;
-  margin-bottom: 6px;
-  line-height: 1.25;
-}
-.cer-quote {
-  font-size: 13px;
-  color: rgba(240,237,248,0.50);
-  font-style: italic;
-  margin-bottom: 26px;
-  line-height: 1.8;
-}
-.cer-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 24px;
-}
-.meta-item .label { font-size: 10px; letter-spacing: 2px; color: rgba(240,237,248,0.38); margin-bottom: 4px; }
-.meta-item .value { font-size: 15px; color: var(--gold-light); font-weight: 600; }
-
-.cer-types { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
-.ctype {
-  flex: 1;
-  min-width: 160px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.09);
-  border-radius: 10px;
-  padding: 14px 16px;
-}
-.ctype-icon { font-size: 18px; margin-bottom: 6px; display: block; }
-.ctype-name { font-size: 13px; font-weight: 700; color: #F0EDF8; margin-bottom: 4px; }
-.ctype-desc { font-size: 11px; color: rgba(240,237,248,0.48); line-height: 1.6; }
-
-.cer-cta {
-  display: inline-block;
-  background: rgba(201,150,58,0.18);
-  border: 1px solid rgba(201,150,58,0.4);
-  color: var(--gold-light);
-  padding: 10px 24px;
-  border-radius: 8px;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  font-family: 'Noto Serif TC', serif;
-  font-weight: 700;
-  transition: opacity 0.2s;
-}
-.cer-cta:hover { opacity: 0.8; }
-
-/* ─── LEGEND ─── */
-.legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  align-items: center;
-  padding: 18px 20px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  margin-top: 48px;
-}
-.legend-title { width:100%; font-size:10px; letter-spacing:3px; color:var(--muted2); }
-.li { display:flex; align-items:center; gap:7px; font-size:12px; color:var(--muted); }
-.li-dot { width:8px; height:8px; border-radius:50%; }
-
-/* ─── FOOTER ─── */
-footer {
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(180deg, var(--bg2) 0%, var(--bg) 100%);
-  border-top: 1px solid var(--border);
-  padding: 52px 24px 60px;
-  text-align: center;
-}
-.footer-dots { display:flex; justify-content:center; gap:6px; margin-bottom:20px; }
-.footer-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(20px, 4vw, 28px);
-  color: var(--ink);
-  margin-bottom: 6px;
-  font-style: italic;
-}
-.footer-logo span { color: var(--purple); }
-.footer-sub { font-size: 12px; color: var(--muted); letter-spacing: 2px; line-height: 2; margin-bottom: 28px; }
-
-.codes { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-bottom:24px; }
-.chip {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 8px 18px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-decoration: none;
-  font-family: 'Noto Serif TC', serif;
-  transition: opacity 0.2s;
-  display: inline-block;
-}
-.chip:hover { opacity: 0.75; }
-.chip span { font-size:10px; font-weight:400; color:var(--muted); margin-left:5px; letter-spacing:1px; }
-.cg { color: var(--gold); }
-.cb { color: var(--blue); }
-.cp { color: var(--purple); }
-.cr { color: var(--pink); }
-
-.footer-line { font-size:12px; color:var(--muted); letter-spacing:2px; }
-
-/* LOGO */
-.mh-logo {
-  width: 88px;
-  height: 88px;
-  object-fit: contain;
-  margin-bottom: 18px;
-  opacity: 0.92;
-  filter: drop-shadow(0 2px 8px rgba(138,78,199,0.15));
-}
-
-/* COPYRIGHT BOX */
-.copyright-box {
-  margin-top: 32px;
-  padding: 20px 24px;
-  background: rgba(42,31,74,0.06);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  max-width: 560px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.cr-title {
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--ink2);
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-}
-.cr-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 14px;
-}
-.cr-link {
-  font-size: 12px;
-  color: var(--purple);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  letter-spacing: 1px;
-}
-.cr-link:hover { opacity: 0.7; }
-.cr-text {
-  font-size: 11px;
-  color: var(--muted);
-  line-height: 1.8;
-  letter-spacing: 0.5px;
-}
-
-@media(max-width: 580px){
-  .cards { grid-template-columns: 1fr; }
-  .ceremony { padding: 24px 18px; }
-  .ctype { min-width:100%; }
-  .wrapper { padding: 0 14px 60px; }
-  header { padding: 44px 16px 36px; }
-}
+.origin{background:linear-gradient(180deg,#fff,rgba(239,231,251,.62));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.origin-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.origin-card{background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--soft)}.origin-card .origin-img{height:360px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}.origin-card .origin-img img{width:100%;height:100%;object-fit:contain}.origin-card .origin-copy{padding:18px}.origin-card .origin-copy b{display:block;color:var(--purple3);font-size:18px;margin-bottom:6px}.origin-card .origin-copy span{display:block;color:var(--muted);font-size:14px;line-height:1.8}
+.route{background:linear-gradient(135deg,rgba(255,255,255,.7),rgba(239,231,251,.7));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.route-img{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.8);background:white}.route-note{margin-top:18px;text-align:center;color:var(--muted);font-weight:700}.journey{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{position:relative;background:rgba(255,255,255,.82);border:1px solid var(--line);border-radius:26px;padding:24px 20px;box-shadow:var(--soft);min-height:260px;overflow:hidden}.step:before{content:attr(data-code);position:absolute;right:-10px;top:-20px;font-family:'Playfair Display',serif;font-size:72px;color:rgba(90,25,141,.08);font-weight:700}.step .icon{font-size:30px;margin-bottom:12px}.step h3{font-size:22px;color:var(--purple3);line-height:1.35;margin-bottom:10px}.step p{font-size:14px;color:var(--muted);line-height:1.75}.step a{display:inline-flex;margin-top:16px;color:var(--purple);font-weight:900;font-size:14px;border-bottom:1px solid rgba(90,25,141,.22)}
+.courses{background:linear-gradient(180deg,rgba(255,255,255,.42),rgba(255,255,255,.84));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.course-group{margin-bottom:42px}.course-title{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:14px}.course-title h3{font-size:28px;color:var(--purple3)}.price{color:var(--gold);font-weight:900}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--soft);position:relative;overflow:hidden}.card:before{content:'';position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,var(--purple),var(--gold))}.region{font-size:13px;color:var(--purple);font-weight:900;letter-spacing:.14em;margin-bottom:8px}.date{font-family:'Playfair Display',serif;font-size:30px;line-height:1.1;color:var(--ink);font-weight:600}.weekday{color:var(--muted);font-size:13px;margin:6px 0 12px}.time{font-size:14px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:12px}.badge{display:inline-flex;margin-top:14px;padding:4px 10px;border-radius:999px;background:rgba(142,165,107,.16);color:#5e7639;font-size:12px;font-weight:900}.deadline{margin-top:10px;color:var(--rose);font-size:13px;font-weight:900}.card .btn{width:100%;margin-top:16px;padding:10px 14px;font-size:13px}.note{margin-top:14px;background:rgba(90,25,141,.06);border:1px solid var(--line);border-radius:18px;padding:16px 18px;color:var(--muted);font-size:14px}
+.ceremony-card{background:linear-gradient(135deg,rgba(48,17,79,.96),rgba(90,25,141,.94));color:#fff;border-radius:28px;padding:30px;box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.16);position:relative;overflow:hidden}.ceremony-card:before{content:'';position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(237,199,103,.24),transparent 65%)}.ceremony-card h3{font-size:32px;line-height:1.32;margin-bottom:12px}.ceremony-card p{color:rgba(255,255,255,.78)}.cer-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:18px 0}.cer-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:18px;padding:16px}.cer-box strong{color:var(--gold2);display:block;margin-bottom:4px}.ceremony-card .btn{margin-top:8px}
+.gallery{background:linear-gradient(135deg,rgba(90,25,141,.95),rgba(50,18,84,.98));color:white;position:relative;overflow:hidden}.gallery .section-head h2,.gallery .section-head p{color:white}.photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.photo-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:24px;overflow:hidden;position:relative;padding:10px}.photo-card .imgbox{background:rgba(255,255,255,.06);border-radius:18px;overflow:hidden;display:flex;align-items:center;justify-content:center;min-height:320px}.photo-card.wide .imgbox{min-height:260px}.photo-card.tall .imgbox{min-height:420px}.photo-card img{width:100%;height:100%;max-height:520px;object-fit:contain;display:block}.photo-card .pcap{padding:13px 8px 4px}.photo-card .pcap b{display:block;color:var(--gold2);font-size:16px;margin-bottom:4px}.photo-card .pcap span{display:block;color:rgba(255,255,255,.78);font-size:13px;line-height:1.7}.gallery-caption{text-align:center;margin-top:22px;font-size:22px;font-weight:900;color:var(--gold2)}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.testimonial{background:rgba(255,255,255,.78);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:var(--soft)}.testimonial h3{font-size:18px;color:var(--purple);margin-bottom:10px}.testimonial p{font-size:14px;color:var(--muted)}.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.faq{background:white;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--soft)}.faq h3{font-size:18px;color:var(--purple);margin-bottom:8px}.faq p{color:var(--muted);font-size:14px}.final-cta{text-align:center;background:linear-gradient(135deg,rgba(255,255,255,.82),rgba(239,231,251,.9));border:1px solid var(--line);border-radius:34px;padding:48px 24px;box-shadow:var(--shadow)}.final-cta h2{font-size:42px;color:var(--purple3);margin-bottom:14px}.final-cta p{color:var(--muted);margin-bottom:22px}.footer{padding:52px 0;background:#fff;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.footer-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}.footer strong{color:var(--purple3)}.footer a{color:var(--purple);text-decoration:underline;text-underline-offset:3px}.legal{margin-top:18px;padding:16px 18px;border-radius:18px;background:rgba(90,25,141,.05);border:1px solid var(--line)}.mobile-sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:70;display:none;gap:10px}.mobile-sticky a{flex:1}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media(max-width:980px){.navlinks a:not(.btn){display:none}.hero-grid,.about-grid,.intro-grid,.footer-grid{grid-template-columns:1fr}.hero-card{max-width:620px;margin:auto}.journey,.testimonials,.faq-grid{grid-template-columns:1fr 1fr}.photo-grid{grid-template-columns:1fr 1fr}.quick-trust{grid-template-columns:1fr 1fr 1fr}}
+@media(max-width:640px){.container{width:min(100% - 28px,1120px)}.nav{height:64px}.brand span{font-size:13px}.navlinks .btn{padding:9px 13px;font-size:12px}.hero{padding:46px 0 34px}.hero h1{font-size:42px}.lead{font-size:18px}.quick-trust,.journey,.testimonials,.faq-grid,.photo-grid,.cer-grid,.origin-grid{grid-template-columns:1fr}.hero-card img.main{height:420px}.logo-float{width:72px;height:72px}.logo-float img{width:62px;height:62px}.about-copy h2,.final-cta h2{font-size:30px}.portrait img{height:auto}.course-title{display:block}.course-title h3{font-size:24px}.photo-card .imgbox{min-height:240px}.photo-card.tall .imgbox{min-height:360px}.mobile-sticky{display:flex}.footer{padding-bottom:110px}}
 </style>
 </head>
 <body>
-
-<header>
-  <div class="flame-dots">
-    <div class="fdot fdot-gold"></div>
-    <div class="fdot fdot-blue"></div>
-    <div class="fdot fdot-purple"></div>
-    <div class="fdot fdot-pink"></div>
+<div class="bg"></div>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#top"><img src="magnified-healing-logo.png" alt="擴大療癒法® 標誌"><span>瓦遇 Wagi × 擴大療癒法®</span></a>
+    <nav class="navlinks" aria-label="主要導覽">
+      <a href="#start">初學者</a><a href="#origin">起點故事</a><a href="#route">路線圖</a><a href="#map">課程地圖</a><a href="#courses">開課行程</a><a href="#story">關於瓦遇</a><a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="https://linktr.ee/AscendAWANA369" target="_blank" rel="noopener">報名／私訊</a>
+    </nav>
   </div>
-  
-  <img src="data:image/jpeg;base64,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" alt="Magnified Healing® Logo" class="mh-logo" />
-  <h1>瓦遇 <span class="accent">Wagi</span><br>2026 全年開課行程</h1>
-  <p class="header-sub">
-    擴大療癒法® · 全台巡迴 × 線上 × 年度慶典<br>
-    每一個時間點，都是祢靈魂準備好的此刻
-  </p>
-  <a href="https://lin.ee/4ErTXt9" target="_blank" style="text-decoration:none;">
-    <div class="line-pill">🟣 官方 LINE @209grmlx　點此加入 →</div>
-  </a>
 </header>
-
-<div class="wrapper">
-
-  <!-- ── MH1 ── -->
-  <div class="section-label">
-    <div class="section-tag">
-      <span class="tag-code gold">MH1</span>
-      <span class="tag-name">擴大療癒法® 一階工作坊</span>
-      <span class="tag-price">新生 $14,400 ／ 複訓 $7,200</span>
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">✦ Magnified Healing® Course Journey ✦</div>
+        <h1>帶領祢啟開<br><em>揚昇</em>的大門</h1>
+        <p class="lead">進入靈魂進展的下一個里程碑，在光與愛中重新找回自己的生命方向。</p>
+        <p class="hero-copy">給情緒疲憊、正在尋找內在力量、渴望學習靈性實修的人。由瓦遇 Wagi 陪伴你從第一階開始，循序進入擴大療癒法®的學習旅程。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#courses">立即看課程</a>
+          <a class="btn btn-secondary" href="https://linktr.ee/AscendAWANA369" target="_blank" rel="noopener">私訊／報名入口</a>
+        </div>
+        <div class="quick-trust">
+          <div class="trust-card"><strong>實體小班</strong><span>花蓮・桃園・高雄・台中可邀課</span></div>
+          <div class="trust-card"><strong>官方授證</strong><span>依課程階段進行資格審核</span></div>
+          <div class="trust-card"><strong>課後陪伴</strong><span>專屬社群持續學習與交流</span></div>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="瓦遇 Wagi 形象照">
+        <div class="logo-float"><img src="magnified-healing-logo.png" alt="擴大療癒法® 標誌"></div>
+        <img class="main" src="wagi-profile.jpg" alt="瓦遇 Wagi 個人照">
+        <div class="hero-badge"><h3>瓦遇・㛊心 Wagi・Tosi</h3><p>泰雅族療癒師，Wagi 意為太陽。陪伴大家在喜悅、平靜與愛中學習。</p></div>
+      </div>
     </div>
+  </section>
+
+  <section id="start" class="intro">
+    <div class="container">
+      <div class="section-head"><div class="section-kicker">FOR BEGINNERS</div><h2>第一次接觸，也可以安心開始</h2><p>這是一條重視日常練習、內在覺察與溫柔陪伴的學習路徑。</p></div>
+      <div class="intro-grid">
+        <div class="panel"><h3>適合現在的你</h3><p>當你感到情緒疲憊、人生卡住，或內在有一個聲音正在呼喚你往更深處探索，這裡會用清楚的架構陪你一步步開始。</p><div class="checks"><div class="check">✔ 無靈修經驗可</div><div class="check">✔ 不需特殊體質</div><div class="check">✔ 非宗教加入要求</div><div class="check">✔ 小班穩定陪伴</div></div></div>
+        <div class="panel"><h3>我們要通的是自己的神性</h3><p>不需要追求特殊能力，重點是重新靠近自己，在生活中建立更穩定的覺察、選擇與愛的行動。</p><div class="checks"><div class="check">✔ 喜悅</div><div class="check">✔ 平靜</div><div class="check">✔ 連結</div><div class="check">✔ 願意開始</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="container about-grid">
+      <div class="portrait"><img src="wagi-profile.jpg" alt="瓦遇 Wagi"></div>
+      <div class="about-copy"><div class="section-kicker">ABOUT WAGI</div><h2>我是瓦遇 Wagi，願成為愛的容器。</h2><p>Wagi 源自泰雅族語，意為「太陽」，象徵光、生命與溫暖的源頭。瓦遇是 AWANA ING 安望納盈創辦人，也是 Florentis™ 花源天地共振系統創建者。</p><p>2018 年第一次學習擴大療癒法®後，我感受到一份深刻的愛與光。從最初以交換方式帶領練習，到正式開課、陪伴更多人進入靈性實修，這條路逐漸成為我長期投入的志業。</p><p>我希望來到這裡的人，不只是看見一套課程，而是感受到：有人真的走過、實修過，也願意以溫柔而清楚的方式陪你開始。</p><div class="quote-line">「讓教學成為愛的祈禱。」</div><p>在課程中，我重視安全、溫柔與結構，陪伴學員回到自己的感知、方向與生命步伐。</p><div class="tags"><span class="tag">泰雅族療癒師</span><span class="tag">AWANA ING 創辦人</span><span class="tag">Florentis™ 創建者</span><span class="tag">擴大療癒法® 講師</span></div></div>
+    </div>
+  </section>
+
+  <section id="origin" class="origin">
+    <div class="container">
+      <div class="section-head"><div class="section-kicker">WAGI'S BEGINNING</div><h2>從第一次學習，到第一次服務</h2><p>這些照片記錄了瓦遇走上擴大療癒法®教學與服務道路的起點。讓第一次認識我的人，看見這不是一夕之間建立的品牌，而是一段真實累積的生命路程。</p></div>
+      <div class="origin-grid">
+        <article class="origin-card"><div class="origin-img"><img src="wagi-mh1-beginning.jpg" alt="瓦遇第一次學習 MH1 擴大療癒法一階照片"></div><div class="origin-copy"><b>2018｜第一次學習 MH1</b><span>從一階課程開始，我第一次清楚感受到那份光與愛，也種下日後教學與服務的初心。</span></div></article>
+        <article class="origin-card"><div class="origin-img"><img src="wagi-first-service-01.jpg" alt="瓦遇第一次對外做擴大療癒法個案服務照片"></div><div class="origin-copy"><b>第一次對外服務</b><span>帶著謙卑與練習的心，開始把所學帶進真實世界，陪伴他人靠近自己的內在力量。</span></div></article>
+        <article class="origin-card"><div class="origin-img"><img src="wagi-first-service-02.jpg" alt="瓦遇第一次對外做擴大療癒法個案服務現場照片"></div><div class="origin-copy"><b>以服務作為學習</b><span>從小小的場域開始，一步一步累積經驗，也確認自己願意長期走在身心靈教學與陪伴的道路上。</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="route" class="route">
+    <div class="container">
+      <div class="section-head"><div class="section-kicker">WAGI'S JOURNEY</div><h2>瓦遇的身心靈學習教學路線圖</h2><p>從生命經驗、靈性學習到教學服務，這條路不是速成，而是一段長期實修與陪伴的累積。</p></div>
+      <div class="route-img"><img src="wagi-route-map.jpg" alt="瓦遇 Wagi 身心靈探索路線圖"></div>
+      <p class="route-note">這份路線圖協助第一次認識我的人，更快理解我的學習脈絡、教學累積與服務方向。</p>
+    </div>
+  </section>
+
+  <section id="map">
+    <div class="container">
+      <div class="section-head"><div class="section-kicker">COURSE MAP</div><h2>靈魂進展的課程地圖</h2><p>依照你的階段，選擇現在最適合的入口。</p></div>
+      <div class="journey">
+        <article class="step" data-code="1"><div class="icon">🌱</div><h3>MH1 一階工作坊</h3><p>重新與自己連結的開始。適合第一次接觸身心靈與能量學習的人。</p><a href="#mh1">看 MH1 場次</a></article>
+        <article class="step" data-code="1.5"><div class="icon">🔮</div><h3>MH1.5 高深資訊研究</h3><p>深化每日練習、理解進階資訊，通往三階與教師階的必要前備。</p><a href="#mh15">看 MH1.5</a></article>
+        <article class="step" data-code="2"><div class="icon">🕊️</div><h3>MH2 慶典工作坊</h3><p>進入群體共振與慶典服務，在共同參與中感受連結。</p><a href="#mh2">看 MH2 慶典</a></article>
+        <article class="step" data-code="3"><div class="icon">👑</div><h3>MH3 光能療癒</h3><p>給穩定實修者的高階學習，進入更深的服務與光的理解。</p><a href="#mh3">看 MH3 場次</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses" class="courses">
+    <div class="container">
+      <div class="section-head"><div class="section-kicker">2026 SCHEDULE</div><h2>2026 開課行程</h2><p>直接報名或私訊詢問。每一個場次皆可從官方 LINE 開始確認。</p></div>
+      <div id="mh1" class="course-group"><div class="course-title"><h3>MH1｜擴大療癒法® 一階工作坊</h3><div class="price">新生 $14,400｜複訓 $7,200</div></div><div class="cards">
+        <article class="card"><div class="region">高雄</div><div class="date">5/26–27</div><div class="weekday">二、三</div><div class="time">09:00–17:00（第一天至 21:00）</div><span class="badge">✅ 已確認開班</span><div class="deadline">報名截止：5/20</div><a class="btn btn-primary" href="https://reurl.cc/dprqXz" target="_blank" rel="noopener">立即報名</a></article>
+        <article class="card"><div class="region">花蓮主場</div><div class="date">5/30–31</div><div class="weekday">六、日</div><div class="time">09:00–17:00（第一天至 21:00）<br>花蓮市中央路三段 661 號</div><span class="badge">✅ 已確認開班</span><div class="deadline">報名截止：5/20</div><a class="btn btn-primary" href="https://reurl.cc/dprqXz" target="_blank" rel="noopener">立即報名</a></article>
+        <article class="card"><div class="region">桃園 平鎮區</div><div class="date">6/6–7</div><div class="weekday">六、日</div><div class="time">09:00–17:00（第一天至 21:00）</div><span class="badge">✅ 已確認開班</span><div class="deadline">報名截止：5/30</div><a class="btn btn-primary" href="https://reurl.cc/dprqXz" target="_blank" rel="noopener">立即報名</a></article>
+        <article class="card"><div class="region">花蓮主場</div><div class="date">6/13–14</div><div class="weekday">六、日</div><div class="time">09:00–17:00（第一天至 21:00）<br>花蓮市中央路三段 661 號</div><span class="badge">✅ 已確認開班</span><div class="deadline">報名截止：6/5</div><a class="btn btn-primary" href="https://reurl.cc/dprqXz" target="_blank" rel="noopener">立即報名</a></article>
+      </div><div class="note">花蓮教室可提供學員打地舖留宿。其他日期歡迎邀課：花蓮／台中／高雄／桃園 2 人以上可開班，其他縣市 4 人以上，海外 8 人以上。</div></div>
+      <div id="mh15" class="course-group"><div class="course-title"><h3>MH1.5｜一階復習與高深資訊研究課程</h3><div class="price">新生 $7,300｜複訓 $3,600｜全線上</div></div><div class="cards"><article class="card"><div class="region">Discord 全線上</div><div class="date">全年開放</div><div class="weekday">隨時可邀課</div><div class="time">單日 09:00–22:00｜全台與海外皆可參加｜1–2 人即可啟動專屬場次</div><span class="badge">隨時報名</span><a class="btn btn-primary" href="https://forms.gle/HetxhSfmhJRFCEKm7" target="_blank" rel="noopener">了解詳情</a></article></div><div class="note">需上傳一階證書進行資格審核；此課程是進修三階與教師階前的必要前備。</div></div>
+      <div id="mh2" class="course-group"><div class="course-title"><h3>MH2｜二階慶典工作坊・秋分朝聖大典</h3><div class="price">新訓 $8,300｜複訓 $4,150</div></div><div class="ceremony-card"><h3>讓光成為照亮世界的聖殿</h3><p>這是一場所有人共同參與、讓身體動起來的靈性實踐大典。無論你是想成為帶領者、想回到聖團的懷抱，或是單純渴望在神聖場域中感受愛與連結，秋分的花蓮都為你敞開。</p><div class="cer-grid"><div class="cer-box"><strong>慶典學員</strong>完成一階課程＋11 天練習者，新訓／複訓皆可。</div><div class="cer-box"><strong>同修輔導員</strong>已完成二階授證的老學員，協助儀式場域。</div><div class="cer-box"><strong>嘉賓來賓</strong>對靈性課程有興趣的一般大眾，15:00 開放入場。</div></div><p><strong>2026/9/19（六）｜花蓮市｜報名截止 9/10</strong></p><a class="btn btn-gold" href="https://forms.gle/wBrtRkgGYxuGRHqz9" target="_blank" rel="noopener">慶典報名</a></div></div>
+      <div id="mh3" class="course-group"><div class="course-title"><h3>MH3｜三階「光能療癒」習修者工作坊</h3><div class="price">三日實體｜需 MH1 + MH1.5｜費用洽詢</div></div><div class="cards">
+        <article class="card"><div class="region">6月場</div><div class="date">6/26–28</div><div class="weekday">五、六、日</div><div class="time">09:00–12:00／13:00–19:00｜地點依報名學員所在區域確認</div><div class="deadline">報名截止：6/15</div><a class="btn btn-primary" href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" rel="noopener">立即報名</a></article>
+        <article class="card"><div class="region">7–8月場</div><div class="date">7/31–8/2</div><div class="weekday">五、六、日</div><div class="time">09:00–12:00／13:00–19:00｜地點依報名學員所在區域確認</div><div class="deadline">報名截止：7/20</div><a class="btn btn-primary" href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" rel="noopener">立即報名</a></article>
+        <article class="card"><div class="region">9月場</div><div class="date">9/25–27</div><div class="weekday">五、六、日</div><div class="time">09:00–12:00／13:00–19:00｜地點依報名學員所在區域確認</div><div class="deadline">報名截止：9/15</div><a class="btn btn-primary" href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" rel="noopener">立即報名</a></article>
+        <article class="card"><div class="region">11月場</div><div class="date">11/6–8</div><div class="weekday">五、六、日</div><div class="time">09:00–12:00／13:00–19:00｜地點依報名學員所在區域確認</div><div class="deadline">報名截止：10/25</div><a class="btn btn-primary" href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" rel="noopener">立即報名</a></article>
+      </div><div class="note">此頁面以公開招生資訊為主，詳細課程內容於資格確認後說明，避免公開揭露受保護的技術內容。</div></div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="container">
+      <div class="section-head"><div class="section-kicker">REAL CLASS MOMENTS</div><h2>真實課程現場</h2><p>從一階入門、線上復習，到二階慶典與三階實修。每一張照片，都是有人願意走進光裡的真實紀錄。</p></div>
+      <div class="photo-grid">
+        <article class="photo-card wide"><div class="imgbox"><img src="mh1-real-01.jpg" alt="MH1 擴大療癒法一階實體小班課程合照"></div><div class="pcap"><b>MH1｜一階實體小班完成授證</b><span>從零開始走進光與愛的練習，在溫柔而有結構的陪伴中，重新靠近自己。</span></div></article>
+        <article class="photo-card wide"><div class="imgbox"><img src="mh15-real-01.jpg" alt="MH1.5 一階線上復習與高深資訊研究課程"></div><div class="pcap"><b>MH1.5｜線上復習與高深資訊研究</b><span>跨城市也能延續每日實修，透過線上陪伴，讓理解更清晰、練習更穩定。</span></div></article>
+        <article class="photo-card wide"><div class="imgbox"><img src="mh2-real-01.jpg" alt="MH2 二階慶典大合照"></div><div class="pcap"><b>MH2｜秋分慶典大合照</b><span>一群人共同走進光中，從個人練習走向群體共振與服務。</span></div></article>
+        <article class="photo-card wide"><div class="imgbox"><img src="mh2-real-02.jpg" alt="MH2 二階慶典現場共振"></div><div class="pcap"><b>MH2｜慶典現場共振</b><span>透過身體、聲音與祝福共同參與，讓學習從理解進入真實的行動。</span></div></article>
+        <article class="photo-card wide"><div class="imgbox"><img src="mh2-real-03.jpg" alt="MH2 二階慶典教學與分享"></div><div class="pcap"><b>MH2｜慶典教學與分享</b><span>在公開場域中學習如何承接、組織與服務，讓光不再只是獨自閃耀。</span></div></article>
+        <article class="photo-card wide"><div class="imgbox"><img src="mh2-real-04.jpg" alt="MH2 二階慶典授證與祝福"></div><div class="pcap"><b>MH2｜慶典授證與祝福</b><span>每一次結業，都是願心的更新；每一次回到場域，都在學習成為更穩定的光。</span></div></article>
+        <article class="photo-card wide"><div class="imgbox"><img src="mh3-real-01.jpg" alt="MH3 三階光能療癒習修者課程合照"></div><div class="pcap"><b>MH3｜三階光能療癒習修者</b><span>進入更深度的高階實體學習，在多年累積的實修基礎上，拓展服務的穩定度。</span></div></article>
+        <article class="photo-card tall"><div class="imgbox"><img src="mh3-real-02.jpg" alt="MH3 三階小班實修與個別陪伴"></div><div class="pcap"><b>MH3｜小班實修與個別陪伴</b><span>小班制讓每個人都能被看見，也能在自己的節奏裡深化理解。</span></div></article>
+      </div>
+      <div class="gallery-caption">有人真的在這裡被接住過。</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head"><div class="section-kicker">STUDENT VOICES</div><h2>學員真實回饋</h2><p>以下內容以學員主觀分享呈現，作為學習經驗參考，不作療效保證。</p></div>
+      <div class="testimonials">
+        <div class="testimonial"><h3>「那是一種沒有批判的愛」</h3><p>生命裡的積累，原來都在為某一個時刻做準備。當我願意靠近，開始感受到全然包容與愛的能量。</p></div>
+        <div class="testimonial"><h3>「我開始理解自己的支持」</h3><p>從每天預留時間與自己相處開始，慢慢不再追求立即答案，而是學會倒空與歸零。</p></div>
+        <div class="testimonial"><h3>「我們在同一道光裡重逢」</h3><p>那是一群人，在同一道光裡，互相認出彼此，也一起看見自己走到了哪裡。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="intro">
+    <div class="container">
+      <div class="section-head"><div class="section-kicker">FAQ</div><h2>常見問題</h2><p>把第一次接觸最容易卡住的疑問，先安放下來。</p></div>
+      <div class="faq-grid">
+        <div class="faq"><h3>沒有靈修經驗可以嗎？</h3><p>完全可以。MH1 是最適合開始的入口，課程會循序漸進帶領。</p></div>
+        <div class="faq"><h3>一定要通靈嗎？</h3><p>不需要。我們要通的是自己的神性，重點是覺察、練習與生活中的實踐。</p></div>
+        <div class="faq"><h3>很宗教嗎？</h3><p>本課程為靈性教育與自我探索性質，沒有宗教加入要求。</p></div>
+        <div class="faq"><h3>線上課可以嗎？</h3><p>除了 MH1.5 可線上進行，其餘階段皆需實體面對面上課。</p></div>
+        <div class="faq"><h3>我只是想先了解，可以嗎？</h3><p>可以。很多人都是從一次私訊、一次提問開始靠近自己的學習路。</p></div>
+        <div class="faq"><h3>報名後需要審核資格嗎？</h3><p>進階課程需依規範上傳前階段證書或確認練習條件，確保每位學員在適合的階段進入學習。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container final-cta">
+      <h2>願我們在光與愛中相遇 ☀️</h2>
+      <p>有些路，在願意靠近自己的那一刻，生命就已經開始轉向。</p>
+      <div class="hero-actions" style="justify-content:center;margin-bottom:0"><a class="btn btn-primary" href="https://linktr.ee/AscendAWANA369" target="_blank" rel="noopener">加入 LINE／私訊報名</a><a class="btn btn-secondary" href="#courses">回到開課行程</a></div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><strong>AWANA ING 安望納盈｜瓦遇 Wagi × 擴大療癒法®</strong><br>官方 LINE：@209grmlx｜<a href="https://linktr.ee/AscendAWANA369" target="_blank" rel="noopener">Linktree</a><br><a href="https://www.magnifiedhealing-chinese.com/" target="_blank" rel="noopener">擴大療癒法® 中文官網</a> · <a href="https://www.magnifiedhealing.com" target="_blank" rel="noopener">Magnified Healing® Official Website</a></div>
+    <div><strong>共同原創者 Co-Creators</strong><br>凱瑟琳・安德森 Kathryn Anderson<br>吉賽兒・金 Gisèle King</div>
   </div>
-
-  <div class="cards">
-
-    <div class="card c-gold">
-      <div class="card-region"><span class="rdot"></span>花蓮主場</div>
-      <div class="card-date">5月 9–10日</div>
-      <div class="card-weekday">六、日</div>
-      <div class="card-time">09:00–17:00（第一天至 21:00）<br>花蓮市中央路三段 661 號</div>
-      <div class="card-footer">
-        <div class="card-quota"><strong>1人</strong>即確認開班</div>
-        <span class="badge badge-hot">隨報隨開</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：4月 25日</div>
-      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-gold">立即報名 →</a>
-    </div>
-
-    <div class="card c-gold">
-      <div class="card-region"><span class="rdot"></span>花蓮主場</div>
-      <div class="card-date">5月 30–31日</div>
-      <div class="card-weekday">六、日</div>
-      <div class="card-time">09:00–17:00（第一天至 21:00）<br>花蓮市中央路三段 661 號</div>
-      <div class="card-footer">
-        <div class="card-quota"><strong>1人</strong>即確認開班</div>
-        <span class="badge badge-hot">隨報隨開</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：5月 20日</div>
-      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-gold">立即報名 →</a>
-    </div>
-
-    <div class="card c-blue">
-      <div class="card-region"><span class="rdot"></span>台中</div>
-      <div class="card-date">4月 29–30日</div>
-      <div class="card-weekday">三、四</div>
-      <div class="card-time">09:00–17:00（第一天至 21:00）</div>
-      <div class="card-footer">
-        <div class="card-quota">滿 <strong>2人</strong>成班</div>
-        <span class="badge badge-open">招生中</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：4月 20日</div>
-      <div class="card-address">霧峰區樹仁路61號5樓（2人）<br>西區忠明南路333號3樓（3人以上）</div>
-      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-blue">立即報名 →</a>
-    </div>
-
-    <div class="card c-blue">
-      <div class="card-region"><span class="rdot"></span>台中</div>
-      <div class="card-date">5月 4–5日</div>
-      <div class="card-weekday">一、二</div>
-      <div class="card-time">09:00–17:00（第一天至 21:00）</div>
-      <div class="card-footer">
-        <div class="card-quota">滿 <strong>2人</strong>成班</div>
-        <span class="badge badge-open">招生中</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：4月 25日</div>
-      <div class="card-address">霧峰區樹仁路61號5樓（2人）<br>西區忠明南路333號3樓（3人以上）</div>
-      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-blue">立即報名 →</a>
-    </div>
-
-    <div class="card c-purple">
-      <div class="card-region"><span class="rdot"></span>桃園 平鎮區</div>
-      <div class="card-date">6月 6–7日</div>
-      <div class="card-weekday">六、日</div>
-      <div class="card-time">09:00–17:00（第一天至 21:00）</div>
-      <div class="card-footer">
-        <div class="card-quota">滿 <strong>3人</strong>成班</div>
-        <span class="badge badge-open">招生中</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：5月 30日</div>
-      <div class="card-address">平鎮區民族路三段 281 號 2 樓</div>
-      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-purple">立即報名 →</a>
-    </div>
-
-    <div class="card c-pink">
-      <div class="card-region"><span class="rdot"></span>高雄</div>
-      <div class="card-date">5月 26–27日</div>
-      <div class="card-weekday">二、三</div>
-      <div class="card-time">09:00–17:00（第一天至 21:00）</div>
-      <div class="card-footer">
-        <div class="card-quota">滿 <strong>4人</strong>成班</div>
-        <span class="badge badge-open">招生中</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：5月 20日</div>
-      <div class="card-address">左營區明華一路 221 號 2 樓</div>
-      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-pink">立即報名 →</a>
-    </div>
-
-    <div class="card c-purple">
-      <div class="card-region"><span class="rdot"></span>台北</div>
-      <div class="card-date">6月 13–14日</div>
-      <div class="card-weekday">二、三</div>
-      <div class="card-time">09:00–17:00（第一天至 21:00）</div>
-      <div class="card-footer">
-        <div class="card-quota">滿 <strong>4人</strong>成班</div>
-        <span class="badge badge-open">招生中</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：6月 5日</div>
-      <a href="https://reurl.cc/dprqXz" target="_blank" class="card-cta cta-purple">立即報名 →</a>
-    </div>
-
-  </div>
-  <div class="note">💡 花蓮教室可提供學員打地舖留宿，報名時告知即可｜全台滿4人、海外滿8人皆可申請專屬邀課</div>
-
-  <!-- ── MH1.5 ── -->
-  <div class="section-label">
-    <div class="section-tag">
-      <span class="tag-code teal">MH1.5</span>
-      <span class="tag-name">一階復習與高深研究課程</span>
-      <span class="tag-price">新生 $7,300 ／ 複訓 $3,600 · 全線上</span>
-    </div>
-  </div>
-
-  <div class="cards-3">
-    <div class="card c-teal">
-      <div class="card-region"><span class="rdot"></span>Discord 全線上</div>
-      <div class="card-date">4月 20日</div>
-      <div class="card-weekday">一</div>
-      <div class="card-time">09:00–22:00<br>全台 / 海外皆可參加</div>
-      <div class="card-footer"><span class="badge badge-open">開放報名</span></div>
-      <div class="card-deadline">⏰ 報名截止：4月 15日</div>
-      <a href="https://forms.gle/HetxhSfmhJRFCEKm7" target="_blank" class="card-cta cta-teal">立即報名 →</a>
-    </div>
-    <div class="card c-teal">
-      <div class="card-region"><span class="rdot"></span>Discord 全線上</div>
-      <div class="card-date">5月 20日</div>
-      <div class="card-weekday">三</div>
-      <div class="card-time">09:00–22:00<br>全台 / 海外皆可參加</div>
-      <div class="card-footer"><span class="badge badge-open">開放報名</span></div>
-      <div class="card-deadline">⏰ 報名截止：5月 15日</div>
-      <a href="https://forms.gle/HetxhSfmhJRFCEKm7" target="_blank" class="card-cta cta-teal">立即報名 →</a>
-    </div>
-    <div class="card c-teal">
-      <div class="card-region"><span class="rdot"></span>Discord 全線上</div>
-      <div class="card-date">6月 20日</div>
-      <div class="card-weekday">六</div>
-      <div class="card-time">09:00–22:00<br>全台 / 海外皆可參加</div>
-      <div class="card-footer"><span class="badge badge-open">開放報名</span></div>
-      <div class="card-deadline">⏰ 報名截止：6月 15日</div>
-      <a href="https://forms.gle/HetxhSfmhJRFCEKm7" target="_blank" class="card-cta cta-teal">立即報名 →</a>
-    </div>
-  </div>
-  <div class="note">💡 每月 20 日固定一場 · 1–2人即可啟動專屬邀課 · 需上傳一階證書資格審核 · 進修三階前必修</div>
-
-  <!-- ── MH3 ── -->
-  <div class="section-label">
-    <div class="section-tag">
-      <span class="tag-code purple">MH3</span>
-      <span class="tag-name">三階「光能療癒」習修者工作坊</span>
-      <span class="tag-price">新生 $21,600 ／ 複訓 $10,800 · 需 MH1＋MH1.5</span>
-    </div>
-  </div>
-
-  <div class="price-box">
-    <div class="price-row"><span class="price-label">① 新生報名</span><span class="price-val">NT$ 21,600</span></div>
-    <div class="price-includes">含：官方三階課本、深度學習講義、官方正式三階證書（紙本）、官方三階電子證書（含證書費 NT$1,800）</div>
-    <div class="price-row"><span class="price-label">② 複訓學員</span><span class="price-val">NT$ 10,800</span></div>
-    <div class="price-includes">含：深度學習講義、官方複訓參與證書（紙本）、官方三階電子證書（含證書費 NT$880）<br>複訓需另購最新教材者，教材費另計 NT$750</div>
-  </div>
-
-  <div class="cards">
-
-    <div class="card c-blue">
-      <div class="card-region"><span class="rdot"></span>台中</div>
-      <div class="card-date">5月 1–3日</div>
-      <div class="card-weekday">五、六、日</div>
-      <div class="card-time">09:00–12:00 ／ 13:00–19:00</div>
-      <div class="card-footer">
-        <div class="card-quota">已確認開班</div>
-        <span class="badge badge-confirmed">✦ 確認</span>
-      </div>
-      <div class="card-address">霧峰區樹仁路61號5樓（2人班）<br>西區忠明南路333號3樓（3人以上）</div>
-      <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-blue">立即報名 →</a>
-    </div>
-
-    <div class="card c-gold">
-      <div class="card-region"><span class="rdot"></span>花蓮主場</div>
-      <div class="card-date">6月 26–28日</div>
-      <div class="card-weekday">五、六、日</div>
-      <div class="card-time">09:00–12:00 ／ 13:00–19:00</div>
-      <div class="card-footer">
-        <div class="card-quota"><strong>1人</strong>即確認開班</div>
-        <span class="badge badge-hot">隨報隨開</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：6月 15日</div>
-      <div class="card-address">花蓮市中央路三段 661 號</div>
-      <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-gold">立即報名 →</a>
-    </div>
-
-    <div class="card c-purple">
-      <div class="card-region"><span class="rdot"></span>台北</div>
-      <div class="card-date">7月 31–8月 2日</div>
-      <div class="card-weekday">五、六、日</div>
-      <div class="card-time">09:00–12:00 ／ 13:00–19:00</div>
-      <div class="card-footer">
-        <div class="card-quota">滿 <strong>4人</strong>成班</div>
-        <span class="badge badge-open">招生中</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：7月 20日</div>
-      <div class="card-address">台北火車站附近（確認成班後公告）</div>
-      <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-purple">立即報名 →</a>
-    </div>
-
-    <div class="card c-pink">
-      <div class="card-region"><span class="rdot"></span>高雄</div>
-      <div class="card-date">9月 25–27日</div>
-      <div class="card-weekday">五、六、日</div>
-      <div class="card-time">09:00–12:00 ／ 13:00–19:00</div>
-      <div class="card-footer">
-        <div class="card-quota">滿 <strong>4人</strong>成班</div>
-        <span class="badge badge-open">招生中</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：9月 15日</div>
-      <div class="card-address">左營區明華一路 221 號 2 樓</div>
-      <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-pink">立即報名 →</a>
-    </div>
-
-    <div class="card c-purple">
-      <div class="card-region"><span class="rdot"></span>桃園 平鎮區</div>
-      <div class="card-date">11月 6–8日</div>
-      <div class="card-weekday">五、六、日</div>
-      <div class="card-time">09:00–12:00 ／ 13:00–19:00</div>
-      <div class="card-footer">
-        <div class="card-quota">滿 <strong>3人</strong>成班</div>
-        <span class="badge badge-open">招生中</span>
-      </div>
-      <div class="card-deadline">⏰ 報名截止：10月 25日</div>
-      <div class="card-address">平鎮區民族路三段 281 號 2 樓</div>
-      <a href="https://forms.gle/SFV7LnssZwhma6Qt9" target="_blank" class="card-cta cta-purple">立即報名 →</a>
-    </div>
-
-  </div>
-  <div class="note">💡 全台縣市滿4人、海外滿8人可申請專屬邀課 · 完成三階可使用光能療癒技術，但不具教師資格</div>
-
-  <!-- ── MH2 ── -->
-  <div class="section-label">
-    <div class="section-tag">
-      <span class="tag-code pink">MH2</span>
-      <span class="tag-name">二階慶典工作坊・秋分朝聖大典</span>
-      <span class="tag-price">新訓 $8,300 ／ 複訓 $4,150</span>
-    </div>
-  </div>
-
-  <div class="ceremony">
-    <div class="cer-eyebrow">✦ ANNUAL CEREMONY · 2026 AUTUMN EQUINOX · 9/19</div>
-    <div class="cer-title">瓦遇 Wagi<br>2026 秋分朝聖慶典</div>
-    <div class="cer-quote">「不只是我在發光，<br>而是我們一起，照亮世界。」</div>
-    <div class="cer-meta">
-      <div class="meta-item">
-        <div class="label">日期</div>
-        <div class="value">2026年 9月 19日（六）</div>
-      </div>
-      <div class="meta-item">
-        <div class="label">地點</div>
-        <div class="value">花蓮市區（確認人數後公告）</div>
-      </div>
-      <div class="meta-item">
-        <div class="label">學員報到</div>
-        <div class="value">09:00 · 全天至 19:00</div>
-      </div>
-      <div class="meta-item">
-        <div class="label">報名截止</div>
-        <div class="value">9月 10日</div>
-      </div>
-    </div>
-    <div class="cer-types">
-      <div class="ctype">
-        <span class="ctype-icon">👑</span>
-        <div class="ctype-name">慶典學員（新訓 / 複訓）</div>
-        <div class="ctype-desc">完成一階＋11天練習者<br>含官方二階國際教師證書<br>新訓 $8,300 ／ 複訓 $4,150</div>
-      </div>
-      <div class="ctype">
-        <span class="ctype-icon">🕊️</span>
-        <div class="ctype-name">同修輔佐員</div>
-        <div class="ctype-desc">已完成二階授證老學員<br>協助儀式能量場共創<br>免費參與</div>
-      </div>
-      <div class="ctype">
-        <span class="ctype-icon">🌸</span>
-        <div class="ctype-name">嘉賓來賓</div>
-        <div class="ctype-desc">對能量療癒有興趣皆可<br>15:00 入場體驗<br>免費</div>
-      </div>
-    </div>
-    <a href="https://forms.gle/wBrtRkgGYxuGRHqz9" target="_blank" class="cer-cta">慶典學員 / 同修輔佐 報名 →</a>
-  </div>
-
-  <!-- LEGEND -->
-  <div class="legend">
-    <div class="legend-title">三聖火焰色標系統</div>
-    <div class="li"><span class="li-dot" style="background:var(--gold)"></span>金色火焰 · 花蓮主場</div>
-    <div class="li"><span class="li-dot" style="background:var(--blue)"></span>藍色火焰 · 台中</div>
-    <div class="li"><span class="li-dot" style="background:var(--purple)"></span>紫色火焰 · 台北 / 桃園</div>
-    <div class="li"><span class="li-dot" style="background:var(--pink)"></span>玫瑰火焰 · 高雄</div>
-    <div class="li"><span class="li-dot" style="background:var(--teal)"></span>青光 · 線上課程</div>
-  </div>
-
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-dots">
-    <div class="fdot fdot-gold"></div>
-    <div class="fdot fdot-blue"></div>
-    <div class="fdot fdot-purple"></div>
-    <div class="fdot fdot-pink"></div>
-  </div>
-  <div class="footer-logo">瓦遇 <span>Wagi</span> · 㛊心 Tosi</div>
-  <p class="footer-sub">
-    擴大療癒法® 官方授證 Master-Teacher<br>
-    泰雅語 · Wagi 意為「太陽」
-  </p>
-  <div class="codes">
-    <a href="https://reurl.cc/dprqXz"                  target="_blank" class="chip cg">MH1 <span>一階工作坊</span></a>
-    <a href="https://forms.gle/HetxhSfmhJRFCEKm7"      target="_blank" class="chip cb">MH1.5 <span>高深研究課</span></a>
-    <a href="https://forms.gle/wBrtRkgGYxuGRHqz9"      target="_blank" class="chip cr">MH2 <span>秋分慶典</span></a>
-    <a href="https://forms.gle/SFV7LnssZwhma6Qt9"       target="_blank" class="chip cp">MH3 <span>三階光能</span></a>
-  </div>
-  <div class="footer-line">
-    <a href="https://lin.ee/4ErTXt9" target="_blank" style="color:var(--purple);text-decoration:none;">官方 LINE @209grmlx 點此加入</a>
-    ｜ linktr.ee/AscendAWANA369
-  </div>
-
-  <div class="copyright-box">
-    <div class="cr-title">🌐 官方網站</div>
-    <div class="cr-links">
-      <a href="https://www.magnifiedhealing.com.tw" target="_blank" class="cr-link">擴大療癒法® 中文官網</a>
-      <a href="https://www.magnifiedhealing.com" target="_blank" class="cr-link">擴大療癒法® 英文官網</a>
-    </div>
-    <p class="cr-text">
-      擴大療癒法®的名稱、標誌，以及所有教材與內容均受到國際法規與世界智慧財產組織（WIPO）的保護，版權歸屬於擴大療癒法®公司所有。
-    </p>
-    <p class="cr-text" style="margin-top:8px;">
-      擴大療癒法®共同原創者：凱瑟琳·安德森 (Kathryn Anderson) · 吉賽兒·金 (Gisèle King)
-    </p>
-  </div>
+  <div class="container legal">本課程為靈性教育與自我探索性質，不涉及醫療診斷、治療或療效保證。如有身心健康相關需求，請諮詢合格醫療專業人員。擴大療癒法®（Magnified Healing®）名稱、標誌及教材內容受智慧財產權保護，公開頁面不揭露受保護的技術與點化細節。</div>
 </footer>
-
+<div class="mobile-sticky"><a class="btn btn-primary" href="https://linktr.ee/AscendAWANA369" target="_blank" rel="noopener">報名／私訊</a><a class="btn btn-secondary" href="#courses">看課表</a></div>
 </body>
 </html>
