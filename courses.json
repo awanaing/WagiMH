@@ -84,6 +84,18 @@
           "badge": "隨時邀課",
           "buttonText": "了解邀課",
           "buttonLink": "https://forms.gle/SFV7LnssZwhma6Qt9"
+        },
+        {
+          "type": "scheduled",
+          "region": "桃園平鎮",
+          "date": "12/1–3",
+          "weekday": "二、三、四",
+          "time": "09:00–19:00",
+          "badge": "✅ 已確認開班",
+          "deadline": "報名截止：11/20",
+          "buttonText": "立即報名",
+          "buttonLink": "https://forms.gle/SFV7LnssZwhma6Qt9",
+          "expireDate": "2026-12-03"
         }
       ]
     }
